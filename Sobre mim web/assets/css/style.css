@@ -102,6 +102,7 @@ a {
         position: absolute;
         top: 13rem;
         left: 7rem;
+        cursor: pointer;
     }
 
     .image-left img {
@@ -160,6 +161,7 @@ a {
         position: absolute;
         top: 13rem;
         left: 10rem;
+        cursor: pointer;
     }
 
     .image-left img {
@@ -193,8 +195,9 @@ a {
     .image-left {
         display: block;
         position: absolute;
-        top: 20rem;
+        top: 10rem;
         left: 15rem;
+        cursor: pointer;
     }
 
     .image-left img {
@@ -230,6 +233,7 @@ a {
         position: absolute;
         top: 58rem;
         left: 25rem;
+        cursor: pointer;
     }
 
     .image-left img {
