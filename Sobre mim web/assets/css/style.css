@@ -47,6 +47,16 @@ a {
     height: 15rem;
     border-radius: 50%;
     border: 0.3rem solid white;
+    cursor: pointer;
+}
+
+.image-left {
+    display: none;
+}
+
+.image-left img {
+    width: 15rem;
+    height: 15rem;
 }
 
 .text-user {
@@ -55,6 +65,11 @@ a {
     margin-top: 1.5rem;
     font-weight: 400;
     font-size: 2rem;
+    transition: all 200ms ease-in-out;
+}
+
+.text-user a:hover {
+    color: rgb(15, 109, 163);
 }
 
 .templates-icons {
@@ -71,11 +86,29 @@ a {
     font-size: 2.5rem;
 }
 
+.templates-icons a:hover {
+    color: rgb(15, 109, 163);
+}
+
 .container-text {
     display: none;
 }
 
+
+
 @media only screen and (min-width: 768px) {
+    .image-left {
+        display: block;
+        position: absolute;
+        top: 13rem;
+        left: 7rem;
+    }
+
+    .image-left img {
+        width: 12rem;
+        height: 12rem;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -122,6 +155,18 @@ a {
         height: 100vh;
     }
 
+    .image-left {
+        display: block;
+        position: absolute;
+        top: 13rem;
+        left: 10rem;
+    }
+
+    .image-left img {
+        width: 15rem;
+        height: 15rem;
+    }
+
     .container-text h2 {
         font-size: 2.5rem;
     }
@@ -145,6 +190,18 @@ a {
         height: 100vh;
     }
 
+    .image-left {
+        display: block;
+        position: absolute;
+        top: 20rem;
+        left: 15rem;
+    }
+
+    .image-left img {
+        width: 15rem;
+        height: 15rem;
+    }
+
     .container-text h2 {
         font-size: 2.5rem;
     }
@@ -161,7 +218,23 @@ a {
 
 @media only screen and (min-width: 2560px) {
     .container {
-        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .image-left {
+        display: block;
+        position: absolute;
+        top: 58rem;
+        left: 25rem;
+    }
+
+    .image-left img {
+        width: 15rem;
+        height: 15rem;
     }
 
     .container-text h2 {
