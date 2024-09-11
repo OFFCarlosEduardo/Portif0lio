@@ -8,6 +8,7 @@
     <title>Register</title>
     <!--css-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body class="main-bg content-bg">
@@ -17,22 +18,27 @@
         </div>
         <div class="form">
             <div class="form-textfield">
-                <label for="iemail">Username</label>
-                <input type="email" name="email" id="iemail" placeholder="Username" required>
+                <label for="iusername">Username</label>
+                <input type="text" name="username" id="iusername" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
             </div>
             <div class="form-textfield">
                 <label for="iemail">Email</label>
                 <input type="email" name="email" id="iemail" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
             </div>
             <div class="form-textfield">
                 <label for="ipassword">Password</label>
                 <input type="password" name="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
             </div>
             <div class="form-textfield">
-                <label for="iemail">Confirmation password</label>
-                <input type="email" name="email" id="iemail" placeholder="Confirmation password" required>
+                <label for="ipassword-confirmation">Confirmation password</label>
+                <input type="password" name="password-confirmation" id="ipassword-confirmation"
+                    placeholder="Confirmation password" required>
+                <i class='bx bxs-lock-alt'></i>
             </div>
-            <div class="form-textfield">
+            <div class="form-textfield-btn">
                 <button type="submit" class="btn">Register</button>
             </div>
         </div>

@@ -8,6 +8,7 @@
     <title>Login</title>
     <!--css-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body class="main-bg content-bg">
@@ -16,19 +17,21 @@
             <h1>Login</h1>
         </div>
         <div class="form-textfield">
-            <label for="iemail">Email</label>
-            <input type="email" name="email" id="iemail" placeholder="Email" required>
+            <label for="iusername">Username</label>
+            <input type="text" name="username" id="iusername" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
         </div>
         <div class="form-textfield">
             <label for="ipassword">Password</label>
             <input type="password" name="password" id="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
         </div>
         <div class="form-remember-forgot">
             <label for="iremember_password"> <input type="checkbox" name="remember_password"
                     id="iremember_password">Remeber me</label>
             <a href="#"> Forgot password?</a>
         </div>
-        <div class="form-textfield">
+        <div class="form-textfield-btn">
             <button type="submit" class="btn">Login</button>
         </div>
         <div class="footer-login">

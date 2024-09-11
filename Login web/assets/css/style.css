@@ -63,10 +63,7 @@ a:hover {
 }
 
 .form-textfield {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     padding: 1.6rem 3.2rem;
 }
 
@@ -102,9 +99,24 @@ a:hover {
     font-size: 1.6rem;
 }
 
+.form-textfield i {
+    position: absolute;
+    right: 3.5rem;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    color: white;
+}
+
 .form-textfield input::placeholder {
     color: var(--color-text-one);
     font-size: 1.2rem;
+}
+
+.form-textfield-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn {
@@ -116,6 +128,7 @@ a:hover {
     text-transform: uppercase;
     transition: all 200ms ease-in-out;
     color: var(--color-text-one);
+    margin-top: 3rem;
 }
 
 .btn:hover {
@@ -128,4 +141,5 @@ a:hover {
     padding: 1rem 1.6rem;
     color: var(--color-text-two);
     font-size: 1.2rem;
+    margin-top: 1.5rem;
 }
