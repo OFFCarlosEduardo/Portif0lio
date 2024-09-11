@@ -10,7 +10,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="main-bg content-bg">
+    <div class="content">
+        <div class="header-login">
+            <h1>Login</h1>
+        </div>
+        <div class="form-textfield">
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail" placeholder="Email" required>
+        </div>
+        <div class="form-textfield">
+            <label for="ipassword">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="form-remember-forgot">
+            <label for="iremember_password"> <input type="checkbox" name="remember_password"
+                    id="iremember_password">Remeber me</label>
+            <a href="#"> Forgot password?</a>
+        </div>
+        <div class="form-textfield">
+            <button type="submit" class="btn">Login</button>
+        </div>
+        <div class="footer-login">
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </div>
+    </div>
     <!--js-->
     <script src="assets/js/script.js"></script>
 </body>

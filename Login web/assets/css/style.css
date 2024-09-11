@@ -4,7 +4,7 @@
 
 :root {
     --color-one: #CC9EA2;
-    --color-text-one: #995764;
+    --color-text-one: #e67f93;
     --color-text-two: #fff;
     --color-three: #67254E;
     --color-four: #35356E;
@@ -21,14 +21,111 @@
 }
 
 html {
-    width: 100vw;
-    height: 100vh;
-    font-size: 62.5%;
     overflow-x: hidden;
+    font-size: 62.5%;
 }
 
-body {
-    background: url('../img/img-bg.svg') no-repeat center center;
+a {
+    color: var(--color-text-two);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-text-one);
+}
+
+.main-bg {
+    background-image: url('../img/img-bg.svg');
+    background-position: center center;
     background-size: cover;
-    height: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.content-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: #cc9ea2b7;
+    max-width: 80%;
+    border-radius: 1.5rem;
+}
+
+.header-login h1 {
+    text-align: center;
+    padding: 1rem 1.6rem;
+    color: var(--color-text-two);
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+.form-textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem 3.2rem;
+}
+
+.form-remember-forgot {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-remember-forgot label {
+    color: var(--color-text-two);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-remember-forgot input {
+    cursor: pointer;
+}
+
+.form-textfield label {
+    align-self: flex-start;
+    color: var(--color-text-two);
+    font-size: 1.2rem;
+}
+
+.form-textfield input {
+    width: 100%;
+    border: 0.2rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 4rem;
+    padding: 0.6rem 1.6rem;
+    background: transparent;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.form-textfield input::placeholder {
+    color: var(--color-text-one);
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+    color: var(--color-text-one);
+}
+
+.btn:hover {
+    background-color: var(--color-text-one);
+    color: var(--color-text-two);
+}
+
+.footer-login {
+    text-align: center;
+    padding: 1rem 1.6rem;
+    color: var(--color-text-two);
+    font-size: 1.2rem;
 }
